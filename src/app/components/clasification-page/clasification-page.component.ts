@@ -1,14 +1,13 @@
 import { Component, inject } from '@angular/core';
+import { Driver } from '../../models/driver.model';
 import { HttpClient } from '@angular/common/http';
-import { Driver } from './../../models/driver.model';
 
 @Component({
-  selector: 'app-driver-page',
-  templateUrl: './driver-page.component.html',
-  styleUrl: './driver-page.component.css'
+  selector: 'app-clasification-page',
+  templateUrl: './clasification-page.component.html',
+  styleUrl: './clasification-page.component.css'
 })
-export class DriverPageComponent {
-
+export class ClasificationPageComponent {
   http = inject(HttpClient);
   drivers: Driver[] = [];
 
@@ -24,5 +23,4 @@ export class DriverPageComponent {
         }
       });
   }
-
 }
