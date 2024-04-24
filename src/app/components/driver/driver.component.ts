@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Driver } from './../../models/driver.model';
 
 @Component({
   selector: 'app-driver',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './driver.component.css'
 })
 export class DriverComponent {
-
+  @Input() driver!: Driver;
 }

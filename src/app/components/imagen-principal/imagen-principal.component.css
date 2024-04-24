@@ -58,6 +58,7 @@ body{
     border-radius: 15px;
     text-decoration: none;
     border: 2px solid white;
+    cursor: pointer;
 }
 
 .learn-more button{

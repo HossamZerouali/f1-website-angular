@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ImagenPrincipalComponent } from './components/imagen-principal/imagen-principal.component';
 import { DriverComponent } from './components/driver/driver.component';
+import { InfoSportComponent } from './components/info-sport/info-sport.component';
+import { DriverPageComponent } from './components/driver-page/driver-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ImagenPrincipalComponent,
-    DriverComponent
+    DriverComponent,
+    InfoSportComponent,
+    DriverPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,8 @@
 <app-header></app-header>
-<app-imagen-principal></app-imagen-principal>
-<h1>{{ title }}</h1>
+<h1 class="title">2024 Season Drivers</h1>
+<div class="drivers">
+    <app-driver
+    *ngFor="let driver of drivers.slice(0, 19)"
+    [driver]="driver">
+</app-driver>
+</div>
