@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Team } from '../../models/team.model';
 
 @Component({
   selector: 'app-clasification-teams',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './clasification-teams.component.css'
 })
 export class ClasificationTeamsComponent {
-
+  @Input() team!: Team;
 }

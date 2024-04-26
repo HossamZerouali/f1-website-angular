@@ -1,0 +1,11 @@
+
+<app-header></app-header>
+<h1 class="title">2024 Track Schedule</h1>
+<div class="drivers">
+    <app-track
+        *ngFor="let track of tracks"
+        [track]="track">
+    </app-track>
+</div>
+
+<div class="margen-prob"></div>

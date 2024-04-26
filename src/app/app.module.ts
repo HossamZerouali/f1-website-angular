@@ -13,6 +13,8 @@ import { ClasificationPageComponent } from './components/clasification-page/clas
 import { ClasificationComponent } from './components/clasification/clasification.component';
 import { ClasificationTeamsComponent } from './components/clasification-teams/clasification-teams.component';
 import { ClasificationTeamsPageComponent } from './components/clasification-teams-page/clasification-teams-page.component';
+import { TrackComponent } from './components/track/track.component';
+import { TrackPageComponent } from './components/track-page/track-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ClasificationTeamsPageComponent } from './components/clasification-team
     ClasificationPageComponent,
     ClasificationComponent,
     ClasificationTeamsComponent,
-    ClasificationTeamsPageComponent
+    ClasificationTeamsPageComponent,
+    TrackComponent,
+    TrackPageComponent
   ],
   imports: [
     BrowserModule,

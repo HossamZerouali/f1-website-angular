@@ -1,1 +1,14 @@
-<p>clasification-teams works!</p>
+<div class="contenedor-clasificado" [ngStyle]="{ 'background-color': '#' + team.team_colour }">
+    <div class="pos-driver">
+        <h1> {{ team.position }}  </h1>
+    </div>
+    <div class="name-team">
+        <h1>{{ team.team_name }}</h1>
+    </div>
+    <div class="image-team">
+        <img [src]="team.headshot_url" alt="">
+    </div>
+    <div class="pts">
+        <p> {{team.points}} PTS</p>
+    </div>
+</div>

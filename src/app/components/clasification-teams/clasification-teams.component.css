@@ -1,0 +1,46 @@
+.contenedor-clasificado {
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 40px 0 40px 0;
+    display: flex;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pos-driver {
+    margin-left: 5%;
+}
+
+.name-team {
+    flex: 1 0 auto;
+    margin-left: 15%;
+}
+
+.image-team {
+    width: 100px;
+    flex: 0 0 auto;
+    margin-right: 15%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-team img {
+    padding: 15px;
+    width: auto;
+    height: 9vmin;
+    display: block;
+}
+
+.pts {
+    margin-left: 5%;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 5%;
+    width: 10%;
+}
+
+.pts p {
+    text-align: center;
+}

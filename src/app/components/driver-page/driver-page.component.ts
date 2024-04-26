@@ -13,15 +13,10 @@ export class DriverPageComponent {
   drivers: Driver[] = [];
 
   ngOnInit() {
-    this.http.get<Driver[]>('https://api.openf1.org/v1/drivers')
+    this.http.get<Driver[]>('http://localhost:8080/read/drivers')
       .subscribe((data) => {
-        for (const driver of data) {
-          if (this.drivers.length < 20 &&
-              driver.first_name !== 'Felipe' &&
-              this.drivers.findIndex(d => d.first_name === driver.first_name) === -1) {
-            this.drivers.push(driver);
-          }
-        }
+        this.drivers = data.sort((a, b) => b.points - a.points);
+
       });
   }
 

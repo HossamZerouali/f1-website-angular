@@ -1,1 +1,10 @@
-<p>clasification-teams-page works!</p>
+<app-header></app-header>
+<h1 class="title">2024 Team Standings</h1>
+<div class="drivers">
+    <app-clasification-teams
+        *ngFor="let team of teams"
+        [team]="team">
+    </app-clasification-teams>
+</div>
+
+<div class="margen-prob"></div>
